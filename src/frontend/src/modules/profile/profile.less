@@ -1,0 +1,40 @@
+.profile {
+  &-card {
+    .ant-card-head {
+      padding: 0 1rem;
+    }
+    .ant-card-body {
+      padding: 0;
+      .ant-card-type-inner {
+        .ant-card-head {
+          border-radius: 0;
+        }
+        .ant-card-body {
+          padding: 0.75rem 1rem;
+        }
+      }
+    }
+  }
+}
+
+.update-profile {
+  padding: 1rem;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .ant-form {
+    .ant-row {
+      .ant-col {
+        .ant-form-item-control-input {
+          &-content {
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

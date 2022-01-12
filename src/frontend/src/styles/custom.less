@@ -1,0 +1,261 @@
+.ant-popover-inner {
+  width: 200px;
+  .ant-popover-inner-content {
+    padding: 0;
+  }
+}
+
+.ant-popover-arrow {
+  display: none;
+}
+
+//! Fix Div
+
+.sdp-fix-div {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+//! SVGs
+
+.sdp-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.sdp-svg-lg {
+  width: 48px;
+  height: 48px;
+}
+
+.sdp-svg-sm {
+  width: 16px;
+  height: 16px;
+}
+
+//! Text Alignment
+
+.sdp-text-center {
+  text-align: center;
+}
+
+//! Font
+
+.sdp-text-strong {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sdp-font-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: horizontal;
+  overflow: hidden;
+}
+
+//! Scrollbar
+
+.sdp-scrollbar {
+  ::-webkit-scrollbar {
+    width: @scrollbar-width;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: @scrollbar-track-background;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: @scrollbar-color;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: @scrollbar-hover-color;
+  }
+}
+
+//! Loadig & Error
+
+.sdp-loading-wrapper,
+.sdp-error-wrapper {
+  height: calc(100vh - 104px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sdp-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .ant-result-image {
+    margin: unset;
+  }
+}
+
+//! Menu Item
+
+.cb-menu-item {
+  display: flex;
+  align-items: center;
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.cb-user-info {
+  padding: 8px 16px 4px !important;
+  height: unset !important;
+  line-height: initial !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  .ant-typography {
+    font-size: 12px;
+    width: 100%;
+    &:first-child {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.cb-divider {
+  margin: 0;
+}
+
+//! SVGs
+
+.cb-svg {
+  width: 24px;
+  height: 24px;
+}
+
+//! Table Search
+
+.bank-user-table {
+  .ant-pagination {
+    padding: 0 1rem;
+  }
+  table {
+    tbody {
+      tr {
+        td:first-child {
+          letter-spacing: 1px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.user-list-card {
+  .ant-card-head {
+    padding: 0 1rem;
+  }
+  .ant-card-body {
+    padding: 0;
+    .user-pagination {
+      display: flex;
+      justify-content: flex-end;
+      .custom-pagination {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+.my-pop {
+  .ant-popover-inner-content {
+    padding: 8px;
+  }
+}
+
+.cb-table-search-filter-icon {
+  color: @primary-color;
+}
+
+.cb-table-search {
+  width: 300px;
+  padding: 8px;
+  &-input {
+    margin-bottom: 8px;
+  }
+}
+
+//! Font
+
+.cb-text-strong {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.cb-font-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: horizontal;
+  overflow: hidden;
+}
+
+//! Scrollbar
+
+.cb-scrollbar {
+  ::-webkit-scrollbar {
+    width: @scrollbar-width;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: @scrollbar-track-background;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: @scrollbar-color;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: @scrollbar-hover-color;
+  }
+}
+
+//! Flex - Space Between
+
+.cb-flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button:first-child {
+    margin-right: 0.5rem;
+    .anticon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.sdp-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sdp-pd-1 {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.credit {
+  color: @green-6;
+}
+
+.debit {
+  color: @red-6;
+}

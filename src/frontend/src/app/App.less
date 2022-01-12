@@ -1,0 +1,105 @@
+@import "../styles/variables";
+
+.app-layout {
+  height: 100vh;
+  .ant-layout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .ant-typography {
+      margin-bottom: 0;
+    }
+    .app-header-right {
+      .app-header-user-profile {
+        cursor: pointer;
+        border-radius: 4px;
+        width: 220px;
+        .ant-card-body {
+          padding: 4px 8px;
+          display: flex;
+          align-items: center;
+          .app-header-user-avatar {
+            margin-right: 12px;
+            text-transform: uppercase;
+          }
+          .app-header-user-data {
+            display: flex;
+            flex-direction: column;
+            .user-name {
+              font-weight: 700;
+              letter-spacing: 1px;
+              text-transform: capitalize;
+            }
+            .company-name {
+              text-transform: capitalize;
+            }
+            .user-name,
+            .company-name {
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ant-layout-content {
+    min-height: calc(100vh - 144px);
+    overflow-y: auto;
+    padding: 1rem;
+    .app-content-wrapper {
+      min-height: inherit;
+      .login {
+        padding: 0;
+        height: unset;
+        min-height: inherit;
+      }
+      .change-password {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: unset;
+        min-height: inherit;
+      }
+    }
+  }
+  //* Remove this block of css, if you don't want sidebar in your app
+  .ant-layout-sider {
+    &-children {
+      .app-layout-sider-header {
+        border-bottom: 1px solid #ececec;
+        border-right: 1px solid #ececec;
+        height: 72px;
+        .app-icon-btn {
+          padding: 0 1rem;
+          height: inherit;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .anticon {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            svg {
+              height: inherit;
+              width: inherit;
+            }
+          }
+        }
+        .app-icon-btn-collapsed {
+          justify-content: center;
+        }
+      }
+      .app-sidebar-content {
+        .ant-menu {
+          border-right: none;
+          .ant-menu-item:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
